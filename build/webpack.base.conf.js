@@ -14,7 +14,7 @@ module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
     'vui-m': process.env.NODE_ENV === 'production'
-      ? config.build.entryPath
+      ? config.dev.entryPath
       : config.dev.entryPath,
   },
   output: {
